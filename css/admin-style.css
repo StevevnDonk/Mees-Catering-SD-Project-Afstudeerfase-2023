@@ -1,0 +1,192 @@
+/* Importeer het Kaushan Script-lettertype van Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* Globale stijlen voor de pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Achtergrondkleur voor de pagina */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px; /* Ondermarge voor de inhoud */
+    color: #333; /* Standaardtekstkleur */
+}
+
+/* Headerstijlen */
+.header {
+    font-size: 30px;
+    color: #EE9955; /* Kleur voor header */
+    font-family: 'Kaushan Script', cursive; /* Gebruik Kaushan Script-lettertype */
+    text-align: center;
+    padding-top: 20px; /* Ruimte bovenaan de header */
+}
+
+/* Koppelingstijlen */
+a {
+    margin: 0 10px; /* Buitenmarge voor koppelingen */
+    text-decoration: none;
+}
+
+.header a {
+    margin-top: -50px;
+    font-size: 15px;
+    color: #000;
+    font-family: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Onderstreep koppelingen bij hover */
+}
+
+/* Menukoppeling en toevoegkoppeling */
+.menu-link, .add-link {
+    text-align: center;
+    margin-top: 20px; /* Afstand bovenaan */
+}
+
+.menu-link a, .add-link a {
+    text-decoration: none;
+    color: #EE9955;
+}
+
+.add-link a {
+    background-color: #EE9955; /* Achtergrondkleur voor toevoegkoppeling */
+    color: #fff; /* Tekstkleur voor toevoegkoppeling */
+    padding: 10px 20px; /* Binnenafstand voor toevoegkoppeling */
+    border-radius: 5px; /* Afgeronde randen voor toevoegkoppeling */
+    margin-bottom: 15px; /* Afstand onderaan toevoegkoppeling */
+}
+
+.add-link {
+    margin-top: 50px; /* Afstand bovenaan toevoegkoppeling */
+}
+
+.add-link a:hover {
+    opacity: 0.7; /* Verminder de opaciteit bij hover */
+}
+
+/* Stijlen voor formulier */
+form {
+    max-width: 600px; /* Maximale breedte voor het formulier */
+    margin: 50px auto; /* Marge boven en onder het formulier */
+    padding: 20px; /* Binnenafstand van het formulier */
+    border-radius: 8px; /* Afgeronde randen voor het formulier */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw rond het formulier */
+    background-color: #fff; /* Achtergrondkleur van het formulier */
+}
+
+/* Stijlen voor invoervelden, selectievakjes en tekstgebieden */
+input, select, textarea {
+    width: 100%; /* Neem volledige breedte in beslag */
+    border: 1px solid #EE9955; /* Randstijl */
+    display: block; /* Weergave als blokelement */
+    margin-bottom: 15px; /* Afstand onderaan */
+    padding: 10px; /* Binnenafstand */
+    box-sizing: border-box; /* Inhoudsmodel omvat ook rand en padding */
+}
+
+/* Stijlen voor knoppen */
+button {
+    padding: 10px 20px; /* Binnenafstand van de knop */
+    background-color: #EE9955; /* Achtergrondkleur van de knop */
+    color: #fff; /* Tekstkleur van de knop */
+    cursor: pointer; /* Cursorstijl */
+    border: none; /* Geen rand */
+    border-radius: 4px; /* Afgeronde randen */
+    transition: background-color 0.2s; /* Soepele overgang voor achtergrondkleur */
+}
+
+button:hover {
+    opacity: 0.7; /* Verminder de opaciteit bij hover */
+}
+
+/* Stijlen voor de inhoudscontainer */
+.container {
+    max-width: 900px; /* Maximale breedte van de container */
+    margin: 20px auto; /* Marge boven en onder de container */
+    background-color: #fff; /* Achtergrondkleur van de container */
+    padding: 20px; /* Binnenafstand van de container */
+    border-radius: 5px; /* Afgeronde randen voor de container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Schaduw rond de container */
+}
+
+/* Stijlen voor categorieën */
+.categorie {
+    color: #EE9955; /* Tekstkleur voor categorieën */
+    padding: 5px; /* Binnenafstand voor categorieën */
+    font-size: 20px; /* Lettergrootte voor categorieën */
+    font-family: 'Kaushan Script', cursive; /* Gebruik Kaushan Script-lettertype */
+    margin-top: 10px; /* Afstand bovenaan categorieën */
+}
+
+.categorie h3 {
+    margin: 0; /* Verwijder marge van koppen binnen categorieën */
+}
+
+/* Flexcontainerstijlen */
+.flex-container {
+    display: flex; /* Weergave als flexcontainer */
+    flex-direction: column; /* Stapel items in kolomrichting */
+    align-items: center; /* Centreer items horizontaal */
+}
+
+/* Tabelstijlen */
+table {
+    width: 100%; /* Neem volledige breedte in beslag */
+    border-collapse: collapse; /* Samenvoegen van randen */
+    margin-top: 10px; /* Afstand bovenaan */
+}
+
+.beschrijving {
+    max-width: 300px; /* Maximale breedte voor beschrijvingen */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Randstijl voor tabel, koppen en cellen */
+}
+
+th, td {
+    padding: 10px; /* Binnenafstand voor koppen en cellen */
+    text-align: left; /* Tekstuitlijning */
+}
+
+th {
+    background-color: #f2f2f2; /* Achtergrondkleur voor koppen */
+}
+
+/* Koppelingsstijlen voor bewerken en verwijderen */
+a.edit-link, a.delete-link {
+    text-decoration: none; /* Geen onderstreping */
+    padding: 5px 10px; /* Binnenafstand van koppelingen */
+    margin: 2px; /* Buitenmarge van koppelingen */
+    border-radius: 5px; /* Afgeronde randen voor koppelingen */
+}
+
+a.edit-link {
+    background-color: #2196F3; /* Achtergrondkleur voor bewerkingskoppeling */
+    color: #fff; /* Tekstkleur voor bewerkingskoppeling */
+}
+
+a.delete-link {
+    background-color: #f44336; /* Achtergrondkleur voor verwijderingskoppeling */
+    color: #fff; /* Tekstkleur voor verwijderingskoppeling */
+}
+
+a.edit-link:hover, a.delete-link:hover {
+    opacity: 0.7; /* Verminder de opaciteit bij hover */
+}
+
+/* Responsieve stijlen */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Verminder de binnenafstand van de container */
+    }
+    .categorie {
+        font-size: 18px; /* Verklein de lettergrootte voor categorieën */
+    }
+    table {
+        font-size: 14px; /* Verklein de lettergrootte voor tabellen */
+    }
+    a.edit-link, a.delete-link {
+        padding: 3px 6px; /* Verminder de binnenafstand van bewerkings- en verwijderingskoppelingen */
+    }
+}

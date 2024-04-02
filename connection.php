@@ -1,9 +1,9 @@
 <?php
 // Databasegegevens
-$host = "localhost";
-$username = "c49046Mees";
-$password = "";
-$database = "c49046Mees";
+$servername = "srv042105.webreus.net";
+$username = "c49048Mees";
+$password = "@OIxinwwNnBV7";
+$database = "c49048Mees";
 
 // Create a new connection
 $conn = new mysqli($servername, $username, $password, $database);
