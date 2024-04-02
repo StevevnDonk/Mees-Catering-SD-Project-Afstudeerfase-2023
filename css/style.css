@@ -1,119 +1,218 @@
-/************************************IMPORT VAN FONTS************************************/
- @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
- 
- /* Basisstijlen voor de hele pagina */
- .mees-homepage body {
-     margin: 0 !important; /* Marges verwijderen */
-     padding: 0 !important; /* Padding verwijderen */
- }
- 
- /* Stijlen voor de hoofdinhoud */
- .mees-homepage .body-home {
-     background-image: url('../img/mees-achtergrond.png');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
- }
- 
- /* Stijlen voor het welkomstbericht */
- .mees-homepage .welkom {
-     text-align: center;
- }
- 
- .mees-homepage .welkom h1 {
-     margin-top: 0px;
-     font-size: 70px;
-     margin-bottom: 10px;
-     color: #fff;
-     font-family: 'Kaushan Script', cursive; /* Gebruik Kaushan Script font */
- }
- 
- .mees-homepage .welkom h2,
- .mees-homepage .over-mees h2 {
-     color: #EE9955;
-     font-family: 'Kaushan Script', cursive; /* Gebruik Kaushan Script font */
-     margin-bottom: 0px;
- }
- 
- .mees-homepage .welkom p {
-     color: #fff;
-     text-transform: uppercase;
-     font-family: 'Roboto', sans-serif; /* Gebruik Roboto font */
- }
- 
- /* Stijlen voor het citaat */
- .mees-homepage .quote::before,
- .mees-homepage .quote::after {
-     content: "";
-     display: inline-block;
-     width: 40px; /* Breedte van de lijn */
-     height: 1px; /* Hoogte van de lijn */
-     background-color: #fff; /* Kleur van de lijn */
-     margin: 0 10px; /* Afstand tussen de lijnen en de tekst */
-     margin-bottom: 5px;
- }
- 
- .mees-homepage .quote {
-     align-items: center; /* Verticaal centreren van de lijnen en de tekst */
- }
- 
- /* Stijlen voor koppelingen */
- .mees-homepage .welkom a {
-     text-decoration: none;
-     color: #fff; /* Witte kleur voor koppelingen */
- }
- 
- /* Stijlen voor knoppen */
- .mees-homepage .buttons {
-     display: inline-flex;
-     margin: 10px;
- }
- 
- .mees-homepage .buttons p,
- .btn-design p {
-     padding: 10px 20px;
-     text-transform: none;
- }
- 
- .mees-homepage .menukaart-btn p,
- .btn-design p {
-     background-color: #EE9955; /* Oranje achtergrondkleur voor knoppen */
-     border-radius: 8px; /* Afgeronde hoeken voor knoppen */
- }
- 
- /* Stijlen voor het over-mees gedeelte */
- .over-mees {
-     padding-top: 50px;
-     padding-bottom: 80px;
-     width: 600px;
-     margin: 0 auto;
-     text-align: center;
- }
- 
-/************************************RESPONSIVE************************************/
+/************************************ IMPORT VAN FONTS ************************************/
+/* Importeer de gewenste lettertypen van Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
- @media screen and (max-width: 768px) {
-    /* Voeg hier stijlen toe voor schermen met een maximale breedte van 768px (tablets en mobiele apparaten) */
+
+/************************************ NAVBAR ************************************/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+  margin-top: -80px;
+}
+
+#logo img {
+  max-height: 50px; /* Pas dit aan naar de gewenste hoogte voor je logo */
+}
+
+/************************************ HOMEPAGE ************************************/
+
+/* Basisstijlen voor de hele pagina */
+.mees-homepage body {
+    margin: 0; /* Verwijder marges */
+    padding: 0; /* Verwijder padding */
+}
+
+/* Stijlen voor de hoofdinhoud */
+.mees-homepage .body-home {
+    background-image: url('../img/mees-achtergrond.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Stijlen voor het welkomstbericht */
+.mees-homepage .welkom {
+    text-align: center;
+}
+
+.mees-homepage .welkom h1 {
+    margin-top: 0; /* Verwijder de bovenmarge */
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive; /* Gebruik Kaushan Script font */
+}
+
+.mees-homepage .welkom h2,
+.mees-homepage .over-mees h2 {
+    color: #EE9955;
+    font-family: 'Kaushan Script', cursive; /* Gebruik Kaushan Script font */
+    margin-bottom: 0;
+}
+
+.mees-homepage .welkom p {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; /* Gebruik Roboto font */
+}
+
+/* Stijlen voor het citaat */
+.mees-homepage .quote::before,
+.mees-homepage .quote::after {
+    content: "";
+    display: inline-block;
+    width: 40px; /* Breedte van de lijn */
+    height: 1px; /* Hoogte van de lijn */
+    background-color: #fff; /* Kleur van de lijn */
+    margin: 0 10px; /* Afstand tussen de lijnen en de tekst */
+    margin-bottom: 5px;
+}
+
+.mees-homepage .quote {
+    align-items: center; /* Verticaal centreren van de lijnen en de tekst */
+}
+
+/* Stijlen voor koppelingen */
+.mees-homepage .welkom a {
+    text-decoration: none;
+    color: #fff; /* Witte kleur voor koppelingen */
+}
+
+/* Stijlen voor knoppen */
+.mees-homepage .buttons {
+    display: inline-flex;
+    margin: 10px;
+}
+
+.mees-homepage .buttons p,
+.btn-design p {
+    padding: 10px 20px;
+    text-transform: none;
+}
+
+.mees-homepage .menukaart-btn p,
+.btn-design p {
+    background-color: #EE9955; /* Oranje achtergrondkleur voor knoppen */
+    border-radius: 8px; /* Afgeronde hoeken voor knoppen */
+}
+
+/* Stijlen voor het over-mees gedeelte */
+.over-mees {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/************************************ RESPONSIVE ************************************/
+
+/* Media query voor schermen met een maximale breedte van 768px (tablets en mobiele apparaten) */
+@media screen and (max-width: 768px) {
     .mees-homepage .welkom h1 {
-      font-size: 40px; /* Verklein de lettergrootte voor mobiele apparaten */
+        font-size: 40px; /* Verklein de lettergrootte voor mobiele apparaten */
     }
 
     .mees-homepage .buttons {
-      flex-direction: column; /* Plaats de knoppen onder elkaar op mobiele apparaten */
+        flex-direction: column; /* Plaats de knoppen onder elkaar op mobiele apparaten */
     }
 
     .mees-homepage .buttons p {
-      margin: 5px 0; /* Voeg wat ruimte toe tussen de knoppen op mobiele apparaten */
+        margin: 5px 0; /* Voeg wat ruimte toe tussen de knoppen op mobiele apparaten */
     }
 
     .over-mees {
-      width: 90%; /* Maak de tekst breder op mobiele apparaten */
-      padding: 20px; /* Voeg wat ruimte toe rondom de tekst op mobiele apparaten */
+        width: 90%; /* Maak de tekst breder op mobiele apparaten */
+        padding: 20px; /* Voeg wat ruimte toe rondom de tekst op mobiele apparaten */
     }
-  }
+}
+
+
+/************************************ MENUKAART ************************************/
+
+/* Flexbox container voor rijen van drie gegevenssets */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Flexbox item voor elke gegevensset */
+.flex-item {
+    margin: 10px;
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.24); /* Schaduw toevoegen aan de items */
+    border-radius: 8px; /* Afgeronde hoeken */
+}
+
+/* Media query voor schermen met een minimale breedte van 900px */
+@media only screen and (min-width: 900px) {
+    .flex-item {
+        flex: 0 0 calc(31%); /* Verdeel de items in drie kolommen */
+    }
+}
+
+/* Media query voor schermen met een maximale breedte van 900px */
+@media only screen and (max-width: 900px) {
+    .categorie {
+        margin-left: 25px !important; /* Aanpassing van de marge voor categorieën op kleinere schermen */
+    }
+}
+
+/* Stijlen voor specifieke elementen */
+.flex-item img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 100%;
+}
+
+.categorie, .naam, .prijs {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.naam {
+    text-align: left;
+}
+
+.prijs {
+    color: #EE9955;
+}
+
+/* Prijsnotatie */
+.prijs::before {
+  content: '€';
+}
+
+.beschrijving {
+    color: #7F7F7F;
+    padding: 0 10px;
+}
+
+.product-info {
+  padding: 0 20px;
+}
+
+.categorie {
+    margin-left: 110px;
+    margin-bottom: -40px;
+    font-size: 40px;
+}
+
