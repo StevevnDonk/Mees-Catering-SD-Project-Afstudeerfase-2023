@@ -51,7 +51,7 @@ try {
                 header("location: admin_panel.php");
             } else {
                 // Als er geen overeenkomende gebruiker is gevonden, toon een foutmelding
-                $message = '<label>Wrong Data</label>';
+                $message = '<label>Geen account gevonden met deze inloggegevens</label>';
             }
         }
     }
